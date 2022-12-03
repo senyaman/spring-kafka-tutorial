@@ -8,6 +8,7 @@ import org.springframework.kafka.config.TopicBuilder;
 @Configuration
 public class KafkaTopicConfig {
 
+    //creating a kafka topic
     @Bean
     public NewTopic kafkaTopic() {
         return TopicBuilder.name("javaguides")
