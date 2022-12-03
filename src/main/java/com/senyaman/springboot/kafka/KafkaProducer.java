@@ -12,6 +12,7 @@ public class KafkaProducer {
 
     private final KafkaTemplate<String, String> kafkaTemplate;
 
+    //creating a kafka producer
     public void sendMessage(String message) {
         log.info(String.format("Message sent %s", message));
         kafkaTemplate.send("javaguides", message);
